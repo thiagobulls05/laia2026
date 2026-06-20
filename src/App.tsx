@@ -4,8 +4,8 @@ import { ProtectedRoute } from './components/ProtectedRoute';
 import { Inicio } from './pages/Inicio';
 import { Aeropuerto } from './pages/Aeropuerto'; 
 import { Equipaje } from './pages/Equipaje';
-import { Vuelo } from './pages/Vuelo';
-import { BoloniaHome } from './pages/BoloniaHome';
+import { Hotel } from './pages/Hotel';
+import { Bolonia } from './pages/Bolonia';
 
 
 function App() {
@@ -24,15 +24,15 @@ function App() {
             </ProtectedRoute>
           } />
 
-          <Route path="/vuelo" element={
-            <ProtectedRoute path="vuelo">
-              <Vuelo />
+          <Route path="/hotel" element={
+            <ProtectedRoute path="hotel">
+              <Hotel />
             </ProtectedRoute>
           } />
           
-          <Route path="/bolonia-home" element={
-            <ProtectedRoute path="bolonia-home">
-              <BoloniaHome />
+          <Route path="/bolonia" element={
+            <ProtectedRoute path="bolonia">
+              <Bolonia />
             </ProtectedRoute>
           } />
           

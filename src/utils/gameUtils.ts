@@ -15,9 +15,9 @@ export const ACTIVITIES = {
 const stageAccess: Record<GameStage, string[]> = {
   inicio: ['inicio', 'equipaje'],
   aeropuerto: ['inicio', 'aeropuerto', 'equipaje'],
-  hotel: ['inicio', 'aeropuerto', 'vuelo', 'equipaje'],
-  bolonia: ['inicio', 'aeropuerto', 'vuelo', 'bolonia', 'equipaje'],
-  final: ['inicio', 'aeropuerto', 'vuelo', 'bolonia', 'equipaje', 'final']
+  hotel: ['inicio', 'aeropuerto', 'hotel', 'equipaje'],
+  bolonia: ['inicio', 'aeropuerto', 'hotel', 'bolonia', 'equipaje'],
+  final: ['inicio', 'aeropuerto', 'hotel', 'bolonia', 'equipaje', 'final']
 };
 
 export const canAccess = (stage: GameStage, targetScreen: string): boolean => {

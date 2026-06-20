@@ -1,9 +1,9 @@
 
 
-export const BoloniaHome = () => {
+export const Bolonia = () => {
   return (
     <div className="p-4 text-center">
-      <h1>BoloniaHome</h1>
+      <h1>Bolonia</h1>
     </div>
   );
 };

@@ -35,7 +35,7 @@ El juego funciona mediante un estado centralizado (`GameStage`) que determina qu
 - **`Inicio.tsx`**: Bienvenida y cuenta atrás (14 ago 6:30am). Acceso a 'Equipaje'.
 - **`Equipaje.tsx`**: Lista de verificación (Checkbox). Animación al completar.
 - **`Aeropuerto.tsx`**: Cuenta atrás (14 ago 7:50am) y enlace a Maps.
-- **`Vuelo.tsx`**: Check-in hotel y geolocalización (botón aparece al llegar al hotel).
+- **`Hotel.tsx`**: Check-in hotel y geolocalización (botón aparece al llegar al hotel).
 
 ### Home de Bolonia (Nodo central)
 

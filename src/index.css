@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Azul y Crema */
+  --color-app-bg: #f0f4f8; /* Crema muy claro de fondo */
+  --color-azul-oscuro: #1e3a8a; /* Azul profundo para textos/títulos */
+  --color-azul-medio: #3b82f6; /* Azul para elementos de interfaz */
+  --color-crema-intenso: #f3e5ab; /* Crema para tarjetas */
+  --color-accent: #e11d48; /* Un color distinto para el botón importante */
+}
+
+body {
+  background-color: var(--color-app-bg);
+  color: var(--color-azul-oscuro);
+  font-family: "Inter", sans-serif;
+}

@@ -21,14 +21,12 @@ const categorias = [
 
 export const Equipaje = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto mb-12">
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold text-azul-oscuro mb-6">Equipaje necesario 🧳</h1>
-        <p className="text-justify text-gray-800 mb-8 leading-relaxed max-w-lg mx-auto">
-          Para que la aventura sea perfecta, prepara con mínimo todo lo necesario. 
-          Aquí tienes la lista de esenciales para el viaje que han de ir en tu mochila de viaje.
-        </p>
-      </div>
+    <div className="main-div">
+      <h1 className="main-header">Equipaje necesario 🧳</h1>
+      <p className="paragraph">
+        Para que la aventura sea perfecta, prepara con mínimo todo lo necesario. 
+        Aquí tienes la lista de esenciales para el viaje que han de ir en tu mochila de viaje.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {categorias.map((cat) => (

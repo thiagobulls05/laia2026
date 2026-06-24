@@ -17,10 +17,10 @@ export const Torres = () => {
   ];
   
   return (
-    <div className="p-6 text-center flex flex-col items-center max-w-lg mx-auto">
-      <h1 className="text-3xl font-bold text-azul-oscuro mb-6">Vistas en las alturas</h1>
+    <div className="main-div">
+      <h1 className="main-header">Vistas en las alturas</h1>
 
-      <p className="text-gray-600 mb-6 text-justify">
+      <p className="paragraph">
         La aventura por Bolonia incluye dos excursiones por las alturas para que puedas ver toda la ciudad a tus pies. 
         Sube una foto de cada excursión para marcar como completada la actividad de las alturas.
       </p>

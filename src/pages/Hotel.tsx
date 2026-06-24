@@ -25,12 +25,12 @@ export const Hotel = () => {
   };
 
   return (
-    <div className="p-6 text-center flex flex-col items-center max-w-lg mx-auto">
-      <h1 className="text-3xl font-bold text-azul-oscuro mb-6">🍝 ¡Bolonia! 🇮🇹</h1>
+    <div className="main-div">
+      <h1 className="main-header">🍝 ¡Bolonia! 🇮🇹</h1>
 
-      <p className="text-justify text-gray-800 mb-8 leading-relaxed">
+      <p className="paragraph">
         ¡Nos vamos a Bolonia! Prepárate para disfrutar de la comida italiana y de una aventura en las calles de una de mis ciudades favoritas. 
-        ¡Próximo destino, el hotel de Bolinia! Dirígete a la ubicación adjuntada lo antes posible.
+        ¡Próximo destino, el hotel de Bolonia! Dirígete a la ubicación adjuntada lo antes posible.
       </p>
 
       <h2 className="text-2xl font-bold mb-6 text-gray-800">Tu próximo vuelo</h2>

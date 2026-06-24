@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@layer components {
+  .main-header {
+    @apply text-3xl font-bold text-azul-oscuro mb-6;
+  }
+
+  .paragraph {
+    @apply text-gray-600 mb-6 text-justify;
+  }
+
+  .main-div {
+    @apply p-6 text-center flex flex-col items-center max-w-lg mx-auto;
+  }
+}
+
 @theme {
   /* Paleta Azul y Crema */
   --color-app-bg: #f0f4f8; /* Crema muy claro de fondo */

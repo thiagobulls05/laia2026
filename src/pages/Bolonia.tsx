@@ -37,9 +37,9 @@ export const Bolonia = () => {
   };
 
   return (
-    <div className="p-6 text-center flex flex-col items-center max-w-lg mx-auto">
-      <h1 className="text-3xl font-bold text-azul-oscuro mb-6">Exploración por Bolonia 🍝 🇮🇹</h1>
-      <p className="text-gray-600 mb-6 text-justify">
+    <div className="main-div">
+      <h1 className="main-header">Exploración por Bolonia 🍝 🇮🇹</h1>
+      <p className="paragraph">
         A partir de aquí empieza la exploración de Bolonia. Conforme vayas avanzando, tus recuerdos se irán guardando en la galería. 
         Cuando se completen todas las actividades, se revelará la sorpresa final.
       </p>

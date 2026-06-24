@@ -6,6 +6,11 @@ import { Aeropuerto } from './pages/Aeropuerto';
 import { Equipaje } from './pages/Equipaje';
 import { Hotel } from './pages/Hotel';
 import { Bolonia } from './pages/Bolonia';
+import { Final } from './pages/Final';
+import { Secretos } from './pages/Secretos';
+import { Torres } from './pages/Torres';
+import { Restaurantes } from './pages/Restaurantes';
+import { Galeria } from './pages/Galeria';
 
 
 function App() {
@@ -33,6 +38,36 @@ function App() {
           <Route path="/bolonia" element={
             <ProtectedRoute path="bolonia">
               <Bolonia />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos" element={
+            <ProtectedRoute path="bolonia/secretos">
+              <Secretos />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/torres" element={
+            <ProtectedRoute path="bolonia/torres">
+              <Torres />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/restaurantes" element={
+            <ProtectedRoute path="bolonia/restaurantes">
+              <Restaurantes />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/galeria" element={
+            <ProtectedRoute path="bolonia/galeria">
+              <Galeria />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/final" element={
+            <ProtectedRoute path="final">
+              <Final />
             </ProtectedRoute>
           } />
           

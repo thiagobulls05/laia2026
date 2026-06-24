@@ -42,16 +42,20 @@ export const Inicio = () => {
         fechaObjetivo={new Date('2026-06-20T14:02:00')} 
         onTimeUp={() => setEsHoraDeRevelar(true)} 
       />
-      {esHoraDeRevelar ? (
-        <button 
-          className="bg-accent hover:bg-rose-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 hover:scale-110 active:scale-95"
-          onClick={handleRevelar}
-        >
-          Revelar Pista
-        </button>
-      ) : (
-        <p className="text-sm text-gray-500 italic">Cuando el contador llegue a 0, se mostrará la próxima pista.</p>
-      )}
+      <button
+        onClick={handleRevelar}
+        disabled={!esHoraDeRevelar}
+        className={`
+          flex items-center justify-center gap-2 font-bold py-3 px-8 rounded-xl shadow-lg transition-all duration-300
+          ${esHoraDeRevelar 
+            ? 'bg-rose-600 hover:bg-rose-700 text-white hover:scale-110 active:scale-95 cursor-pointer' 
+            : 'bg-gray-300 text-gray-500 cursor-not-allowed opacity-75'
+          }
+        `}
+      >
+        {!esHoraDeRevelar && <span>🔒</span>}
+        {esHoraDeRevelar ? 'Siguiente Pista' : 'Esperando pista...'}
+      </button>
       <Link 
         to="/equipaje" 
         className="mt-8 text-azul-oscuro font-medium flex items-center gap-2 hover:text-azul-medio transition-all group"

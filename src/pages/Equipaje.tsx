@@ -15,7 +15,7 @@ const categorias = [
   },
   {
     titulo: 'Accesorios',
-    items: ['Bolso', 'DNI', 'Carnet Universidad', 'Gafas de sol', 'Botella de agua']
+    items: ['Mochila', 'Bolso', 'DNI', 'Carnet Universidad', 'Gafas de sol', 'Botella de agua']
   }
 ];
 

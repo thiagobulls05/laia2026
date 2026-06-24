@@ -3,10 +3,10 @@ export type GameStage = 'inicio' | 'aeropuerto' | 'hotel' | 'bolonia' | 'final';
 
 // Lista de todas las actividades que requieren foto para marcarse como completadas
 export const ACTIVITIES = {
-  SECRETOS: 'siete_secretos',
-  VISTAS: 'vistas_alturas',
-  CENA: 'cena_romantica',
-  GALERIA: 'galeria_recuerdos',
+  SECRETOS: 'secretos',
+  VISTAS: 'torres',
+  CENA: 'restaurantes',
+  GALERIA: 'galeria',
   // Secretos individuales (secreto_1 a secreto_7)
   SECRETO: (n: number) => `secreto_${n}`
 };
@@ -21,7 +21,19 @@ const stageAccess: Record<GameStage, string[]> = {
 };
 
 export const canAccess = (stage: GameStage, targetScreen: string): boolean => {
-  return stageAccess[stage]?.includes(targetScreen) ?? false;
+  // 1. Primero, definimos las pantallas permitidas explícitas
+  const allowed = stageAccess[stage] || [];
+
+  // 2. Si la pantalla es una de las permitidas directamente, devuelve true
+  if (allowed.includes(targetScreen)) return true;
+
+  // 3. Lógica para sub-rutas: 
+  // Si estamos en etapa 'bolonia' o superior, permitimos cualquier cosa que empiece por 'bolonia/'
+  if ((stage === 'bolonia' || stage === 'final') && targetScreen.startsWith('bolonia/')) {
+    return true;
+  }
+
+  return false;
 };
 
 //Determina si una actividad está completada basándose en si existe la foto.

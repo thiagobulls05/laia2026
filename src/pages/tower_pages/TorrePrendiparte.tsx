@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Ubicacion } from '../components/Ubicacion';
-import { TarjetaReserva } from '../components/TarjetaReserva';
+import { Ubicacion } from '../../components/Ubicacion';
+import { TarjetaReserva } from '../../components/TarjetaReserva';
 
 
 export const TorrePrendiparte = () => {

@@ -11,8 +11,15 @@ import { Secretos } from './pages/Secretos';
 import { Torres } from './pages/Torres';
 import { Restaurantes } from './pages/Restaurantes';
 import { Galeria } from './pages/Galeria';
-import { TorreReloj } from './pages/TorreReloj';
-import { TorrePrendiparte } from './pages/TorrePrendiparte';
+import { TorreReloj } from './pages/tower_pages/TorreReloj';
+import { TorrePrendiparte } from './pages/tower_pages/TorrePrendiparte';
+import { SecretoVentana } from './pages/secret_pages/SecretoVentana';
+import { SecretoNeptuno } from './pages/secret_pages/SecretoNeptuno';
+import { SecretoFlechas } from './pages/secret_pages/SecretoFlechas';
+import { SecretoVoltone } from './pages/secret_pages/SecretoVoltone';
+import { SecretoCanabis } from './pages/secret_pages/SecretoCanabis';
+import { SecretoSol } from './pages/secret_pages/SecretoSol';
+import { SecretoDiablo } from './pages/secret_pages/SecretoDiablo';
 
 
 function App() {
@@ -76,6 +83,48 @@ function App() {
           <Route path="/bolonia/torres/torre_prendiparte" element={
             <ProtectedRoute path="bolonia/torres/torre_prendiparte">
               <TorrePrendiparte />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos/secreto_1" element={
+            <ProtectedRoute path="bolonia/secretos/secreto_1">
+              <SecretoVentana />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos/secreto_2" element={
+            <ProtectedRoute path="bolonia/secretos/secreto_2">
+              <SecretoNeptuno />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos/secreto_3" element={
+            <ProtectedRoute path="bolonia/secretos/secreto_3">
+              <SecretoFlechas />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos/secreto_4" element={
+            <ProtectedRoute path="bolonia/secretos/secreto_4">
+              <SecretoVoltone />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos/secreto_5" element={
+            <ProtectedRoute path="bolonia/secretos/secreto_5">
+              <SecretoCanabis />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos/secreto_6" element={
+            <ProtectedRoute path="bolonia/secretos/secreto_6">
+              <SecretoSol />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/secretos/secreto_7" element={
+            <ProtectedRoute path="bolonia/secretos/secreto_7">
+              <SecretoDiablo />
             </ProtectedRoute>
           } />
 

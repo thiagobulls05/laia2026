@@ -1,6 +1,10 @@
 import { PlantillaSecreto } from "../../components/PlantillSecreto";
+import { useGame } from "../../context/GameContext";
+import { ACTIVITIES } from '../../utils/gameUtils'
+import { GestorFoto } from "../../components/GestorFoto";
 
 export const SecretoSol = () => {
+  const { gameState, savePhoto } = useGame();
   
   return (
     <PlantillaSecreto
@@ -15,6 +19,12 @@ export const SecretoSol = () => {
       tituloUbicacion="El sol por un agujero"
       urlGoogleMaps="https://maps.app.goo.gl/fW1h5kVHTAa4nU346"
       srcEmbed="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.0621217075104!2d11.340632812278768!3d44.493393897564886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd495860346b7%3A0xa17d71587906b0a5!2sBas%C3%ADlica%20de%20San%20Petronio!5e0!3m2!1ses!2ses!4v1782324719845!5m2!1ses!2ses"
-    />
+    >
+      <GestorFoto 
+        fotoUrl={gameState.fotos[ACTIVITIES.SECRETO(6)]}
+        onFotoSubida={(base64) => savePhoto(ACTIVITIES.SECRETO(6), base64)}
+        pieDeFoto="¡Sol descubierto!"
+      />
+    </PlantillaSecreto>
   );
 };

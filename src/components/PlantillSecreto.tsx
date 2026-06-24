@@ -7,6 +7,7 @@ interface PlantillaSecretoProps {
   tituloUbicacion: string;
   urlGoogleMaps: string;
   srcEmbed: string;
+  children?: React.ReactNode;
 }
 
 export const PlantillaSecreto = ({ 
@@ -14,7 +15,8 @@ export const PlantillaSecreto = ({
   descripcion, 
   tituloUbicacion, 
   urlGoogleMaps, 
-  srcEmbed 
+  srcEmbed,
+  children
 }: PlantillaSecretoProps) => {
   return (
     <div className="main-div">
@@ -29,6 +31,8 @@ export const PlantillaSecreto = ({
         urlGoogleMaps={urlGoogleMaps}
         srcEmbed={srcEmbed}
       />
+
+      {children}
 
       <div className="mt-12 text-center">
         <Link 

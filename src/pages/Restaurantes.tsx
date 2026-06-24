@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export const Restaurantes = () => {
   
   return (
-    <div className="p-6 max-w-md mx-auto">
+    <div className="p-6 text-center flex flex-col items-center max-w-lg mx-auto">
       <h1 className="text-3xl font-bold text-azul-oscuro mb-6">Restaurantes</h1>
 
       <div className="mt-12 text-center">

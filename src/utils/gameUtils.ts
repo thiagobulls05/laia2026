@@ -7,6 +7,8 @@ export const ACTIVITIES = {
   VISTAS: 'torres',
   CENA: 'restaurantes',
   GALERIA: 'galeria',
+  TORRE_RELOJ: 'torre_reloj',
+  TORRE_PRENDIPARTE: 'torre_prendiparte',
   // Secretos individuales (secreto_1 a secreto_7)
   SECRETO: (n: number) => `secreto_${n}`
 };

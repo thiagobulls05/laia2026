@@ -19,7 +19,7 @@ export const TarjetaActividad = ({ titulo, imagen, completada, onClick }: Tarjet
       <img src={imagen} alt={titulo} className="w-full h-32 object-cover" />
       
       {/* 3. Contenedor de texto con altura fija o mínima para igualar tamaños */}
-      <div className="p-3 bg-white flex-grow flex items-center justify-center min-h-[80px]">
+      <div className="p-3 bg-white grow flex items-center justify-center min-h-20">
         <h3 className="font-bold text-gray-800 text-sm text-center leading-tight">
           {titulo}
         </h3>

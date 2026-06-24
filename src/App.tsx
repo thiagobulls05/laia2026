@@ -11,6 +11,8 @@ import { Secretos } from './pages/Secretos';
 import { Torres } from './pages/Torres';
 import { Restaurantes } from './pages/Restaurantes';
 import { Galeria } from './pages/Galeria';
+import { TorreReloj } from './pages/TorreReloj';
+import { TorrePrendiparte } from './pages/TorrePrendiparte';
 
 
 function App() {
@@ -62,6 +64,18 @@ function App() {
           <Route path="/bolonia/galeria" element={
             <ProtectedRoute path="bolonia/galeria">
               <Galeria />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/torres/torre_reloj" element={
+            <ProtectedRoute path="bolonia/torres/torre_reloj">
+              <TorreReloj />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/bolonia/torres/torre_prendiparte" element={
+            <ProtectedRoute path="bolonia/torres/torre_prendiparte">
+              <TorrePrendiparte />
             </ProtectedRoute>
           } />
 
